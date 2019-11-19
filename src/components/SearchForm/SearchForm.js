@@ -2,16 +2,39 @@ import React, {Component} from 'react';
 import './SearchForm.css';
 
 class SearchForm extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props);
+    this.state = {
+      search: ''
+    }
   }
+
+changeInput = event => {
+  this.setState({search: event.target.value})
+}
+
+searchHandler = () => {
+  let filteredArticles = this.props.articleData.filter(article => {
+    let articleWords = article.headline.split(' ');
+    return articleWords.includes(this.state.search);
+  });
+  if (filteredArticles.length > 0) {
+    this.props.changeTopic(filteredArticles);
+  }
+}
 
   render() {
     return (
       <header>
         <h1>What's <span>New?</span></h1>
-        <input type="text" placeholder="Search for news article here" />
-        <button className="search-button">Search Now</button>
+        <input
+          type="text"
+          placeholder="Search for news article here"
+          name="search"
+          value={this.state.search}
+          onChange={event => this.changeInput(event)}
+        />
+        <button className="search-button" onClick={() => this.searchHandler()}>Search Now</button>
       </header>
     );
   }

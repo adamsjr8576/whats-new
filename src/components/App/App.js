@@ -21,7 +21,9 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <SearchForm />
+        <SearchForm
+        changeTopic={this.changeTopic}
+        articleData={this.state.newsArticle}/>
         <Menu changeTopic={this.changeTopic}/>
         <NewsContainer articleData={this.state.newsArticle} />
       </div>
