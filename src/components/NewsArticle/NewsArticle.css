@@ -6,7 +6,13 @@
   width: 450px;
   margin: 10px;
   background-color: white;
-  height: 550px;
+  height: 500px;
+  opacity: .8;
+}
+
+.news-article:hover {
+  box-shadow: 6px 6px #3E3E3E;
+  opacity: 1;
 }
 
 .article-img {
