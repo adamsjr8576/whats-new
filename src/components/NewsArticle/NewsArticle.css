@@ -1,0 +1,15 @@
+.news-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: 5px;
+  background-color: white;
+  height: 500px;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
