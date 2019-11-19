@@ -33,6 +33,11 @@ searchHandler = () => {
           name="search"
           value={this.state.search}
           onChange={event => this.changeInput(event)}
+          onKeyDown={(e) => {
+            if (e.key ==="Enter") {
+              this.searchHandler();
+            }
+          }}
         />
         <button className="search-button" onClick={() => this.searchHandler()}>Search Now</button>
       </header>

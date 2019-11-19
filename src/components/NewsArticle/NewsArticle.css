@@ -6,7 +6,7 @@
   width: 450px;
   margin: 10px;
   background-color: white;
-  height: 500px;
+  height: 525px;
   opacity: .8;
 }
 
@@ -44,4 +44,12 @@
 .arrow-link {
   height: 40px;
   width: 50px;
+}
+
+.arrow-link:hover {
+  transform: scale(1.1);
+}
+
+.arrow-link:active {
+  transform: translateX(5px);
 }
