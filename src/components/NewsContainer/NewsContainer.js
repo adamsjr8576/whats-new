@@ -2,14 +2,24 @@ import React from 'react';
 import './NewsContainer.css';
 import NewsArticle from "../NewsArticle/NewsArticle";
 
-function NewsContainer(props) {
+const NewsContainer = ({articleData}) => {
+  const articleCards = articleData.map(article => {
+    return (<NewsArticle
+      key = {article.id}
+      id = {article.id}
+      headline = {article.headline}
+      img = {article.img}
+      description = {article.description}
+      url = {article.url}
+      />
+    )
+  });
+
   return (
     <main className="news-container">
-      <NewsArticle articleData={props.articleData} />
+      {articleCards}
     </main>
-  )
+  );
 }
-
-// NEWSCONTAINER COMPONENT CODE GOES HERE
 
 export default NewsContainer;

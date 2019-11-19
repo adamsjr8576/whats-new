@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import local from '../../data/local';
-import entertainment from '../../data/entertainment';
-import health from '../../data/health';
-import science from '../../data/science';
-import technology from '../../data/technology';
 import './App.css';
-import NewsContainer from "../NewsContainer/NewsContainer"
+import NewsContainer from "../NewsContainer/NewsContainer";
+import Menu from "../Menu/Menu";
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      local
+      newsArticle: local
     }
+  }
+
+  changeTopic = (topic) => {
+    this.setState({newsArticle: topic});
   }
 
   render () {
@@ -23,14 +24,8 @@ class App extends Component {
           <input type="text" placeholder="Search for news article here" />
           <button className="search-button">Search Now</button>
         </header>
-        <nav>
-          <button>local news</button>
-          <button>local news</button>
-          <button>local news</button>
-          <button>local news</button>
-          <button>local news</button>
-        </nav>
-        <NewsContainer articleData={local} />
+        <Menu changeTopic={this.changeTopic}/>
+        <NewsContainer articleData={this.state.newsArticle} />
       </div>
     );
   }
