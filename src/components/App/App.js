@@ -4,6 +4,7 @@ import './App.css';
 import NewsContainer from "../NewsContainer/NewsContainer";
 import Menu from "../Menu/Menu";
 
+
 class App extends Component {
   constructor() {
     super();

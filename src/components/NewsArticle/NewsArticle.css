@@ -6,19 +6,36 @@
   width: 450px;
   margin: 10px;
   background-color: white;
-  height: 500px;
+  height: 550px;
 }
 
-img {
+.article-img {
   width: 100%;
   height: 250px;
+}
+
+.article-text {
+  margin: 0 20px;
 }
 
 .link {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: pink;
+  background-color: #757576;
   height: 50px;
   width: 100%;
+}
+
+.article-link {
+  color: black;
+  outline: none;
+  style: none;
+  cursor: pointer;
+  font-size: 125%;
+}
+
+.arrow-link {
+  height: 40px;
+  width: 50px;
 }

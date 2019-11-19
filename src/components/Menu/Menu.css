@@ -3,23 +3,25 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 20%;
-  height: 50vh;
+  width: 25%;
+  height: 350px;
 }
 
 .topic-button {
-  width: 65%;
-  min-width: 150px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  min-width: 175px;
   padding: 10px;
   font-size: 135%;
   border: none;
   background: none;
-  color: white;
+  color: black;
   outline: 0;
 }
 
 .topic-button:hover {
-  background-color: blue;
+  background-color: #DADADC;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   cursor: pointer;
@@ -28,4 +30,10 @@ nav {
 .topic-button:active {
   box-shadow: -3px 3px grey;
   transform: translateX(3px);
+}
+
+.button-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
 }
