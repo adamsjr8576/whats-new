@@ -29,7 +29,7 @@ nav {
 
 .topic-button:active {
   box-shadow: -3px 3px grey;
-  transform: translateX(3px);
+  transform: translateX(5px);
 }
 
 .button-icon {

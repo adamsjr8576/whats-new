@@ -6,13 +6,32 @@ header {
   justify-content: space-around;
 }
 
+span {
+  color: #20AF99;
+}
+
 input {
-  width: 45%;
+  width: 32%;
   padding: 10px;
+  outline: 0;
+  font-size: 135%;
+  border: 0;
 }
 
 .search-button {
   width: 25%;
   padding: 10px;
   font-size: 135%;
+  border-radius: 10px;
+  background-color: #B8DCEF;
+  cursor: pointer;
+  outline: 0;
+}
+
+.search-button:hover {
+  background-color: #A6C6D8;
+}
+
+.search-button:active {
+  transform: scale(.9);
 }

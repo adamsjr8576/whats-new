@@ -13,6 +13,10 @@ changeInput = event => {
   this.setState({search: event.target.value})
 }
 
+clearInput = () => {
+  this.setState({search: ''});
+}
+
 searchHandler = () => {
   let filteredArticles = this.props.articleData.filter(article => {
     let articleWords = article.headline.split(' ');
@@ -21,6 +25,7 @@ searchHandler = () => {
   if (filteredArticles.length > 0) {
     this.props.changeTopic(filteredArticles);
   }
+  this.clearInput();
 }
 
   render() {
