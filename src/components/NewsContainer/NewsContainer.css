@@ -6,4 +6,5 @@
   justify-content: space-around;
   border: 4px solid white;
   overflow: auto;
+  height: 90vh;
 }

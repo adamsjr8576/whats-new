@@ -7,7 +7,9 @@ function NewsArticle(props) {
       <img src={article.img} />
       <h2>{article.headline}</h2>
       <p>{article.description}</p>
-      <a href={article.url} />
+      <section className="link">
+      <a href={article.url}>Link To Article</a>
+      </section>
     </article>
   ));
 }

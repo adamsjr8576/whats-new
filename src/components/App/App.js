@@ -14,10 +14,18 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        // <header>
-        // </header>
-        // <nav>
-        // </nav>
+        <header>
+          <h1>What's <span>New?</span></h1>
+          <input type="text" placeholder="Search for news article here" />
+          <button className="search-button">Search Now</button>
+        </header>
+        <nav>
+          <button>local news</button>
+          <button>local news</button>
+          <button>local news</button>
+          <button>local news</button>
+          <button>local news</button>
+        </nav>
         <NewsContainer articleData={local} />
       </div>
     );
