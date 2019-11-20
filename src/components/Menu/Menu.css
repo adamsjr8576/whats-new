@@ -4,6 +4,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   width: 25%;
+  min-width: 200px;
   height: 350px;
 }
 
@@ -11,20 +12,20 @@ nav {
   display: flex;
   align-items: center;
   width: 80%;
-  min-width: 175px;
+  min-width: 200px;
   padding: 10px;
   font-size: 135%;
   border: none;
   background: none;
-  color: black;
   outline: 0;
+  cursor: pointer;
 }
 
-.topic-button:hover {
+.topic-button:hover,
+.topic-button:focus {
   background-color: #FFFFFF;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
-  cursor: pointer;
 }
 
 .topic-button:active {
@@ -36,4 +37,11 @@ nav {
   height: 40px;
   width: 40px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    margin: auto;
+    width: 60%;
+  }
 }

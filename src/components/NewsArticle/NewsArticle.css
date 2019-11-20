@@ -10,7 +10,8 @@
   opacity: .8;
 }
 
-.news-article:hover {
+.news-article:hover,
+.news-article:focus {
   transform: scale(1.02);
   opacity: 1;
 }
@@ -41,15 +42,27 @@
   font-size: 125%;
 }
 
+.article-link:hover,
+.article-link:focus {
+  transform: scale(1.1);
+}
+
 .arrow-link {
   height: 40px;
   width: 50px;
 }
 
-.arrow-link:hover {
+.arrow-link:hover,
+.arrow-link:focus {
   transform: scale(1.1);
 }
 
 .arrow-link:active {
   transform: translateX(5px);
+}
+
+@media screen and (max-width: 800px) {
+  .news-article {
+    margin: 10px auto;
+  }
 }

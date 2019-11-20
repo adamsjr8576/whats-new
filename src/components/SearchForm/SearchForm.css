@@ -28,10 +28,26 @@ input {
   outline: 0;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
   background-color: #A6C6D8;
 }
 
 .search-button:active {
   transform: scale(.9);
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    flex-direction: column;
+    height: 200px;
+  }
+
+  input {
+    width: 65%;
+  }
+
+  .search-button {
+    width: 65%;
+  }
 }
