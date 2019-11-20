@@ -3,7 +3,7 @@ import './NewsContainer.css';
 import NewsArticle from "../NewsArticle/NewsArticle";
 
 const NewsContainer = ({articleData}) => {
-  const articleCards = articleData.map(article => {
+  const articleCards = articleData && articleData.map(article => {
     return (<NewsArticle
       key = {article.id}
       id = {article.id}
@@ -17,7 +17,7 @@ const NewsContainer = ({articleData}) => {
 
   return (
     <main className="news-container">
-      {articleCards}
+      {articleCards || null}
     </main>
   );
 }
