@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should match the snapshot with all data passed in correctly 1`] = `
+<div
+  className="app"
+>
+  <SearchForm
+    articleData={null}
+    handleSearch={[Function]}
+    loading={true}
+  />
+  <Menu
+    changeTopic={[Function]}
+    loading={true}
+  />
+  <NewsContainer
+    articleData={null}
+  />
+</div>
+`;

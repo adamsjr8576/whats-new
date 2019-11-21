@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsArticle should match the snapshot with all data passed in correctly 1`] = `
+<header>
+  <h1>
+    What's 
+    <span>
+      New?
+    </span>
+  </h1>
+  <input
+    disabled={false}
+    name="search"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Search for news article here"
+    type="text"
+    value=""
+  />
+  <button
+    className="search-button"
+    disabled={false}
+    onClick={[Function]}
+  >
+    Search Now
+  </button>
+</header>
+`;

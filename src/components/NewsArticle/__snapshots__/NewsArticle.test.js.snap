@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsArticle should match the snapshot with all data passed in correctly 1`] = `
+<article
+  className="news-article"
+>
+  <img
+    alt="article"
+    className="article-img"
+    src="https://static01.nyt.com/images/2019/09/27/multimedia/27xp-spiderman/27xp-spiderman-superJumbo.jpg?quality=90&auto=webp"
+  />
+  <h2
+    className="article-text"
+  >
+    Hello world!!
+  </h2>
+  <p
+    className="article-text"
+  >
+    I am saying hello to the world!
+  </p>
+  <section
+    className="link"
+  >
+    <a
+      className="article-link"
+      href="https://www.nytimes.com/2019/09/27/business/media/spiderman-mcu-sony-marvel.html"
+    >
+      Link To Article
+    </a>
+    <a
+      className="article-link"
+      href="https://www.nytimes.com/2019/09/27/business/media/spiderman-mcu-sony-marvel.html"
+    >
+      <img
+        alt="arrow icon"
+        className="arrow-link"
+        src="arrow.png"
+      />
+    </a>
+  </section>
+</article>
+`;
