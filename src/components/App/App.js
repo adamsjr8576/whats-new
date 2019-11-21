@@ -18,7 +18,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://whats-new-api.herokuapp.com/api/v1/news').then(response => response.json()).then(data => {
+    fetch('https://whats-new-api.herokuapp.com/api/v1/news')
+    .then(response => response.json())
+    .then(data => {
       this.setState({ allData: data, selectedData: data[this.state.newsArticle], loading: false });
     });
   }
@@ -41,7 +43,7 @@ class App extends Component {
         articleData={ allData && allData[newsArticle] }
         loading={ loading }/>
         <Menu
-        changeTopic={ this.changeTopic } 
+        changeTopic={ this.changeTopic }
         loading={ loading }/>
         <NewsContainer articleData={ selectedData } />
       </div>

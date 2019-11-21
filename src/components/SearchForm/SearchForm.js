@@ -26,10 +26,10 @@ class SearchForm extends Component {
       const articleWords = article.headline.split(' ');
       return articleWords.includes(search);
     });
+    this.clearInput();
     if (filteredArticles.length > 0) {
       handleSearch(filteredArticles);
     }
-    this.clearInput();
   }
 
   render() {
