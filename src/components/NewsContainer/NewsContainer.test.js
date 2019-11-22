@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import NewsContainer from './NewsContainer';
 
-describe('NewsArticle', () => {
+describe('NewsContainer', () => {
 
   it('should match the snapshot with all data passed in correctly', () => {
     const wrapper = shallow(<NewsContainer

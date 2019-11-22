@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NewsArticle should match the snapshot with all data passed in correctly 1`] = `
+exports[`SearchForm should match the snapshot with all data passed in correctly 1`] = `
 <header>
   <h1>
     What's 

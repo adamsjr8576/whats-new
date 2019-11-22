@@ -3,7 +3,7 @@
 exports[`Menu should match the snapshot with all data passed in correctly 1`] = `
 <nav>
   <button
-    className="topic-button"
+    className="topic-button local"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -16,7 +16,7 @@ exports[`Menu should match the snapshot with all data passed in correctly 1`] = 
      Local
   </button>
   <button
-    className="topic-button"
+    className="topic-button entertainment"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -29,7 +29,7 @@ exports[`Menu should match the snapshot with all data passed in correctly 1`] = 
      Entertainment
   </button>
   <button
-    className="topic-button"
+    className="topic-button health"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -42,7 +42,7 @@ exports[`Menu should match the snapshot with all data passed in correctly 1`] = 
      Health
   </button>
   <button
-    className="topic-button"
+    className="topic-button science"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -55,7 +55,7 @@ exports[`Menu should match the snapshot with all data passed in correctly 1`] = 
      Science
   </button>
   <button
-    className="topic-button"
+    className="topic-button technology"
     disabled={false}
     onClick={[Function]}
     type="button"

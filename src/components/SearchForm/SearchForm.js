@@ -4,7 +4,6 @@ import './SearchForm.css';
 class SearchForm extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       search: ''
     }
@@ -45,8 +44,8 @@ class SearchForm extends Component {
           name="search"
           value={search}
           onChange={event => this.changeInput(event)}
-          onKeyDown={(e) => {
-            if (e.key ==="Enter") {
+          onKeyDown={event => {
+            if (event.key === "Enter") {
               this.searchHandler();
             }
           }}
