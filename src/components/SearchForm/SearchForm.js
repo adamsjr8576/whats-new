@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './SearchForm.css';
+import PropTypes from 'prop-types';
 
 class SearchForm extends Component {
   constructor(props) {
@@ -55,6 +56,12 @@ class SearchForm extends Component {
       </header>
     );
   }
+}
+
+SearchForm.propTypes = {
+  loading: PropTypes.bool,
+  handleSearch: PropTypes.func,
+  articleData: PropTypes.array
 }
 
 export default SearchForm;

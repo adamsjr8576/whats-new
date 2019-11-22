@@ -1,6 +1,7 @@
 import React from 'react';
 import './NewsArticle.css';
-import arrow from '../../images/arrow.png'
+import arrow from '../../images/arrow.png';
+import PropTypes from 'prop-types';
 
 const NewsArticle = ({headline, img, description, url}) => {
   return (
@@ -14,6 +15,14 @@ const NewsArticle = ({headline, img, description, url}) => {
       </section>
     </article>
   );
+}
+
+NewsArticle.propTypes = {
+  id: PropTypes.number,
+  headline: PropTypes.string,
+  img: PropTypes.string,
+  description: PropTypes.string,
+  url: PropTypes.string,
 }
 
 export default NewsArticle;

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Menu.css';
+import PropTypes from 'prop-types';
 
 import entertainmentIcon from '../../images/entertainment.png';
 import healthIcon from '../../images/health.png';
@@ -42,6 +43,11 @@ const Menu = ({ changeTopic, loading }) => {
       </button>
     </nav>
   );
+}
+
+Menu.propTypes = {
+  changeTopic: PropTypes.func,
+  loading: PropTypes.bool
 }
 
 export default Menu;
