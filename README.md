@@ -1,6 +1,6 @@
 # What's New?
 
-##Refactor
+## Refactor
 
 This project has been refactored to use React Hooks in place of class based components. Both the App and SearchForm componenets have been refactored to functional components using React Hooks.
 
