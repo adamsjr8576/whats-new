@@ -3,7 +3,7 @@ import './NewsContainer.css';
 import NewsArticle from "../NewsArticle/NewsArticle";
 import PropTypes from 'prop-types';
 
-const NewsContainer = ({articleData}) => {
+const NewsContainer = ({ articleData }) => {
   const articleCards = articleData && articleData.map(article => {
     return (<NewsArticle
       key = {article.id}

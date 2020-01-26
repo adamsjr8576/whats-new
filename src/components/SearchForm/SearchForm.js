@@ -1,61 +1,48 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 import './SearchForm.css';
 import PropTypes from 'prop-types';
 
-class SearchForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      search: ''
-    }
+const SearchForm = ({ handleSearch, articleData, loading }) => {
+  const [ search, setSearch ] = useState('');
+
+  const changeInput = event => {
+    setSearch(event.target.value);
   }
 
-  changeInput = event => {
-    this.setState({search: event.target.value})
+  const clearInput = () => {
+    setSearch('');
   }
 
-  clearInput = () => {
-    this.setState({search: ''});
-  }
-
-  searchHandler = () => {
-    const { search } = this.state;
-    const { articleData, handleSearch } = this.props;
-
+  const searchHandler = () => {
     const filteredArticles = articleData.filter(article => {
       const articleWords = article.headline.split(' ');
       return articleWords.includes(search);
     });
-    this.clearInput();
+    clearInput();
     if (filteredArticles.length > 0) {
       handleSearch(filteredArticles);
     }
   }
 
-  render() {
-    const { search } = this.state;
-    const { loading } = this.props;
-
-    return (
-      <header>
-        <h1>What's <span>New?</span></h1>
-        <input
-          type="text"
-          placeholder="Search for news article here"
-          name="search"
-          value={search}
-          onChange={event => this.changeInput(event)}
-          onKeyDown={event => {
-            if (event.key === "Enter") {
-              this.searchHandler();
-            }
-          }}
-          disabled={loading}
-        />
-        <button className="search-button" disabled={loading} onClick={() => this.searchHandler()}>Search Now</button>
-      </header>
-    );
-  }
+  return (
+    <header>
+      <h1>What's <span>New?</span></h1>
+      <input
+        type="text"
+        placeholder="Search for news article here"
+        name="search"
+        value={search}
+        onChange={event => changeInput(event)}
+        onKeyDown={event => {
+          if (event.key === "Enter") {
+            searchHandler();
+          }
+        }}
+        disabled={loading}
+      />
+      <button className="search-button" disabled={loading} onClick={() => searchHandler()}>Search Now</button>
+    </header>
+  )
 }
 
 SearchForm.propTypes = {
