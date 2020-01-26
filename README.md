@@ -1,5 +1,9 @@
 # What's New?
 
+##Refactor
+
+This project has been refactored to use React Hooks in place of class based components. Both the App and SearchForm componenets have been refactored to functional components using React Hooks.
+
 ## Abstract
 
 This project served as an intro to learning the basics of React using Create React App. We created a news article site that pulls data from an API via fetch. The site displays the news article based on the topic and has functionality to switch between topics. The user is also able to search the current topic of articles by keywords in the title. This was our first project/app built using React.
